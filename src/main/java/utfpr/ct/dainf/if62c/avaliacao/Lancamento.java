@@ -9,7 +9,7 @@ import java.util.Objects;
  * Avaliação parcial.
  * @author 
  */
-public class Lancamento {
+public class Lancamento implements Comparable<Lancamento>{
     private Integer conta;
     private Date data;
     private String descricao;
@@ -22,6 +22,10 @@ public class Lancamento {
         this.data = data;
         this.descricao = descricao;
         this.valor = valor;
+    }
+    
+    public int compareTo(Lancamento l){
+       return 0;
     }
 
     public Integer getConta() {
